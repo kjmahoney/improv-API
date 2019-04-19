@@ -18,7 +18,7 @@ const renderNounJSON = async (req, res) => {
 
 app.get('/', (req, res) => res.send('howdy'))
 
-app.get('/noun', renderNounJSON)
+app.get('/nouns', renderNounJSON)
 
 app.listen(process.env.PORT || port, () => {
   console.log(`listening on port ${port}`)
