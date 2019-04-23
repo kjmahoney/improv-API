@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const cors = require('cors');
 
 const port = 4000;
 const bodyParser = require('body-parser');
@@ -10,6 +11,8 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
+app.use(cors());
 
 const renderNounJSON = async (req, res) => {
   const json = await convertCSVtoJSON('./nouns.csv');

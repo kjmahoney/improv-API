@@ -20,6 +20,7 @@
   "homepage": "https://github.com/kjmahoney/improv-API#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "csvtojson": "^2.0.8",
     "express": "^4.16.4"
   }
